@@ -1,0 +1,29 @@
+ * {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+ }
+
+ body,
+ p,
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6,
+ span,
+ label,
+ button,
+ input,
+ textarea,
+ select,
+ a,
+ li,
+ blockquote,
+ pre,
+ code,
+ th,
+ td {
+   font-family: sans-serif;
+ }
