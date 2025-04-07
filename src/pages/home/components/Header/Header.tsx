@@ -139,7 +139,7 @@ export function Header() {
                     </div>
 
                     <div className="menu-container-desk">
-                        <input type="checkbox" name="menu-group" id="conta-menu-desk" checked hidden />
+                        <input type="radio" name="menu-group" id="conta-menu-desk" hidden />
                         <label htmlFor="conta-menu-desk" className="menu-label-desk">
                             Minha Conta
                             <CaretDown className="caret-icon-desk" size={20} />
