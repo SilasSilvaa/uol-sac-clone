@@ -21,7 +21,7 @@
 
 
 .carrousel-image img {
-  max-width: 1300px;
+  max-width: 1500px;
   height: 230px;
 }
 
@@ -52,6 +52,6 @@
 @media screen and (max-width: 1024px) {
 
   .carrousel-image img {
-    max-width: 1500px;
+    max-width: 1200px;
   }
 }

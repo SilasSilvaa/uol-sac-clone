@@ -30,4 +30,11 @@
 
  body {
   padding: 0 2px;
- }
+  max-width: 1500px;
+  margin: 0 auto;
+  background-color: #E5E9EC;
+}
+
+#root {
+  background-color: #FFF;
+}
