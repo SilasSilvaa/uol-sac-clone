@@ -1,6 +1,6 @@
 import { Barcode, Invoice, LockSimpleOpen, ShoppingCartSimple, Wallet } from '@phosphor-icons/react';
-import { Card } from '../components/Card/Card';
 import './Cardslist.css'
+import { Card } from '../Card/Card';
 
 export function CardsList() {
     return (
