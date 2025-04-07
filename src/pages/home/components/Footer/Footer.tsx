@@ -18,14 +18,14 @@ export function Footer() {
                     <div className='more-link-content'>
                         <span>Atendimento</span>
                         <a href="https://sac.uol.com.br/atendimento-online">Fale conosco</a>
-                        <a href="https://sac.uol.com.br/atendimento-online">Ouvidoria Produtos Digitais</a>
-                        <a href="https://sac.uol.com.br/atendimento-online">Ouvidoria UOL Host</a>
-                        <a href="https://sac.uol.com.br/atendimento-online">Perguntas frequentes</a>
+                        <a href="https://sac.uol.com.br/ouvidoriapd">Ouvidoria Produtos Digitais</a>
+                        <a href="https://sac.uol.com.br/ouvidoriahost">Ouvidoria UOL Host</a>
+                        <a href="https://faq.uol.com.br/uolpd/">Perguntas frequentes</a>
                     </div>
                     <div className='more-link-content'>
                         <span>Financeiro</span>
                         <a href="https://sac.uol.com.br/cobranca">Meus débitos</a>
-                        <a href="https://sac.uol.com.br/cobranca">Meu extrato</a>
+                        <a href="https://sac.uol.com.br/extrato">Meu extrato</a>
                         <a href="https://sac.uol.com.br/segundaviaboleto">2° Via de boleto a vencer</a>
                         <a href="https://sac.uol.com.br/meiospagamento">Meios de pagamento</a>
                         <a href="https://sac.uol.com.br/comprovante-quitacao">Comprovante de quitação</a>
@@ -37,7 +37,7 @@ export function Footer() {
                         <a href="https://sac.uol.com.br/dados-de-cadastro">Meus dados</a>
                         <a href="https://sac.uol.com.br/produtoseservicos">Meus produtos</a>
                         <a href="https://sac.uol.com.br/wrapper?url=https:%2F%2Fsac.uol.com.br%2Finfo%2Fcartilha%2Findex.jhtm">Cartilha de segurança</a>
-                        <a href="https://sac.uol.com.br/wrapper?url=https:%2F%2Fsac.uol.com.br%2Finfo%2Fcartilha%2Findex.jhtm">Central de segurança</a>
+                        <a href="https://faq.uol.com.br/uolpd/">Central de segurança</a>
                     </div>
                 </div>
             </div>

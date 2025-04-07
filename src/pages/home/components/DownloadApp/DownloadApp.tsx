@@ -16,7 +16,7 @@ export function DownloadApp() {
                         <a href="https://play.google.com/store/apps/details?hl=pt_BR&id=com.invillia.uol.meuappuol">
                             <img src="src\assets\google.png" alt="" />
                         </a>
-                        <a href="https://play.google.com/store/apps/details?hl=pt_BR&id=com.invillia.uol.meuappuol">
+                        <a href="https://apps.apple.com/br/app/meu-uol/id1453193555">
                             <img src="src\assets\app-store.png" alt="" />
                         </a>
 
