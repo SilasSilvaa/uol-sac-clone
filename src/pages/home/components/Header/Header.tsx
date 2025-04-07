@@ -1,5 +1,6 @@
 import { CaretDown, Chats, House, List, Question, Receipt, UserCircle, UserGear, X } from "@phosphor-icons/react";
 import './Header.css'
+import { Link } from "react-router-dom";
 
 export function Header() {
     return (
@@ -96,9 +97,9 @@ export function Header() {
                     </nav>
                 </div>
                 <div className="sac-logo">
-                    <a href="#">
+                    <Link to="/">
                         <img src="/Logo SAC.svg" alt="" height={28} />
-                    </a>
+                    </Link>
                 </div>
 
                 <div className="menu-list">
@@ -156,12 +157,12 @@ export function Header() {
                 </div>
 
                 <div className="second-menu-list">
-                    <a href="#">
+                    <a href="https://faq.uol.com.br/uolpd/">
                         <Question size={32} color="#EAB525" />
                         Ajuda
                     </a>
                     <hr />
-                    <a href="#">
+                    <a href="https://conta.uol.com.br/login">
                         <UserCircle size={32} color="#EAB525" />
                         Entrar
                     </a>
