@@ -1,0 +1,26 @@
+.info-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 1rem;
+}
+
+.info-content {
+    max-width: 960px;
+    padding: 1rem;
+    border-radius: 5px;
+
+    display: flex;
+    gap: 1rem;
+
+    background-color: #F1F1F1;
+}
+
+.text-container a {
+    color: blue;
+}
+
+.text-container a:hover {
+    text-decoration: underline;
+}
