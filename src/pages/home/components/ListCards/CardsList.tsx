@@ -28,38 +28,3 @@ export function CardsList() {
         </div>
     );
 }
-
-// href="https://sac.uol.com.br/cobranca">
-// <div className='card'>
-//     <Wallet />
-//     <span>Meus debitos</span>
-// </div>
-// </
-
-// <a href="https://sac.uol.com.br/produtoseservicos">
-//                 <div className='card'>
-//                     <ShoppingCartSimple />
-//                     <span>Meus Produtos</span>
-//                 </div>
-//             </a>
-
-//             <a href="https://sac.uol.com.br/extrato">
-//                 <div className='card'>
-//                     <Invoice />
-//                     <span>Meu extrato</span>
-//                 </div>
-//             </a>
-
-//             <a href="https://sac.uol.com.br/segundaviaboleto">
-//                 <div className='card'>
-//                     <Barcode />
-//                     <span>2º via de boleto a vencer</span>
-//                 </div>
-//             </a>
-
-//             <a href="https://sac.uol.com.br/segundaviaboleto">
-//                 <div className='card'>
-//                     <LockSimpleOpen />
-//                     <span>Recuperar senha</span>
-//                 </div>
-//             </a>
