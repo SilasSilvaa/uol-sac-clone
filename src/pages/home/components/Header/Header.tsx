@@ -97,7 +97,7 @@ export function Header() {
                 </div>
                 <div className="sac-logo">
                     <a href="#">
-                        <img src="src\assets\Logo SAC.svg" alt="" height={28} />
+                        <img src="/Logo SAC.svg" alt="" height={28} />
                     </a>
                 </div>
 

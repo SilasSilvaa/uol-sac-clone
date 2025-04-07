@@ -7,7 +7,7 @@ export function PreHeader() {
         <aside>
             <div className='box-list'>
                 <Link to={"/"}>
-                    <img src="src\assets\logo_uol.svg" alt="" />
+                    <img src="/logo_uol.svg" alt="" />
                 </Link>
                 <nav className='first-items'>
                     <ul>

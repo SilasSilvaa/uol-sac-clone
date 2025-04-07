@@ -21,15 +21,15 @@ export function Carrousel() {
 
             <div className="carrousel-track">
                 <a href="https://clube.uol.com.br/megaexposiaoandywarholpopart/nOw-pre-venda-20-off-em-ate-6-ingressos?utm_source=bannerSAC_ANDY_0104&utm_medium=bannerSAC_ANDY_0104" target="_blank" className="carrousel-image">
-                    <img src="src/assets/1500_andy.png" alt="" />
+                    <img src="/1500_andy.png" alt="" />
                 </a>
 
                 <a href="https://clube.uol.com.br/3palavrinhas/nOC-50-off-em-ate-4-ingressos?utm_source=bannerSAC_3PALAVRINHAS_0304&utm_medium=bannerSAC_3PALAVRINHAS_0304" target="_blank" className="carrousel-image">
-                    <img src="src/assets/1500_PALAVRINHAS.png" alt="" />
+                    <img src="/1500_PALAVRINHAS.png" alt="" />
 
                 </a>
                 <a href="https://clube.uol.com.br/3palavrinhas/nOC-50-off-em-ate-4-ingressos?utm_source=bannerSAC_3PALAVRINHAS_0304&utm_medium=bannerSAC_3PALAVRINHAS_0304" target="_blank" className="carrousel-image">
-                    <img src="src/assets/1500_teatromagico.png" alt="" />
+                    <img src="/1500_teatromagico.png" alt="" />
                 </a>
             </div>
 
