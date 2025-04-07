@@ -1,4 +1,3 @@
-import { Card } from "./components/Card/Card";
 import { Carrousel } from "./components/Carrousel/Carrousel";
 import { DownloadApp } from "./components/DownloadApp/DownloadApp";
 import { Footer } from "./components/Footer/Footer";
