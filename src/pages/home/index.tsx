@@ -6,6 +6,7 @@ import { Header } from "./components/Header/Header";
 import { InfoComponent } from "./components/InfoComponent/InfoComponent";
 import { PreHeader } from "./components/PreHeader/PreHeader";
 import { Search } from "./components/Search/Search";
+import { CardsList } from "./ListCards/CardsList";
 
 export function Home() {
 
@@ -15,7 +16,7 @@ export function Home() {
             <Header />
             <Carrousel />
             <InfoComponent />
-            <Card />
+            <CardsList />
             <Search />
             <DownloadApp />
             <Footer />
