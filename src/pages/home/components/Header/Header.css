@@ -1,9 +1,6 @@
 a {
     text-decoration: none;
     color: #fff;
-}
-
-a {
     font-size: 14px;
     color: #000;
 }
@@ -31,6 +28,12 @@ a {
 
     gap: 2rem;
     height: 70px;
+}
+
+.menu-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .menu-list a {
@@ -88,12 +91,19 @@ input[type="radio"]:checked+.menu-label-desk .caret-icon-desk {
 
 input[type="radio"]:checked+.menu-label-desk+.menu-dropdown-desk {
     display: flex;
-    gap: 1rem;
-
     white-space: nowrap;
 }
-.menu-label-desk{
+
+.menu-label-desk {
     height: 100%;
+}
+
+input[type="radio"]:checked+.menu-label-desk+.menu-dropdown-desk li {
+    padding: 0.5rem 1rem;
+}
+
+input[type="radio"]:checked+.menu-label-desk+.menu-dropdown-desk li:hover {
+    background-color: #f2f2f2;
 }
 
 input[type="radio"]:checked~.menu-label-desk {
@@ -104,7 +114,6 @@ input[type="radio"]:checked~.menu-label-desk {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* padding: 1rem; */
     cursor: pointer;
     font-size: 14px;
 }
@@ -122,15 +131,15 @@ input[type="radio"]:checked~.menu-label-desk {
         padding: 2rem 1rem;
 
         box-shadow:
-        -2px 0 4px rgba(0, 0, 0, 0.05),
-        2px 0 4px rgba(0, 0, 0, 0.05);
+            -2px 0 4px rgba(0, 0, 0, 0.05),
+            2px 0 4px rgba(0, 0, 0, 0.05);
     }
 
     .menu-list {
         display: none;
     }
 
-    .second-menu-list{
+    .second-menu-list {
         display: none;
     }
 
@@ -161,7 +170,7 @@ input[type="radio"]:checked~.menu-label-desk {
         top: 0;
 
         left: -700px;
-        width: 360px;
+        width: 90%;
         height: 100%;
         transition: left 0.3s ease;
 
@@ -194,7 +203,33 @@ input[type="radio"]:checked~.menu-label-desk {
     .second-block {
         display: flex;
         flex-direction: column;
+
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        gap: 1rem;
+    
         padding-top: 2rem;
+    }
+
+    .menu-home {
+        display: flex;
+        padding: 0 1.5rem;
+        gap: 1rem;
+    }
+
+    .menu-home a {
+        display: flex;
+        align-items: center;
+        /* padding: 0 1.5rem; */
+        gap: 1rem;
+    }
+
+    .menu-dropdown {
+        list-style: none;
+        padding: 0;
+        margin: 0;
     }
 
     .second-block div {
@@ -262,7 +297,6 @@ input[type="radio"]:checked~.menu-label-desk {
     }
 
     .menu-dropdown a {
-        padding: 1rem;
         font-size: 14px;
     }
 }
