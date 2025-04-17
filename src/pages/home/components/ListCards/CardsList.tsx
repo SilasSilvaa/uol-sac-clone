@@ -4,7 +4,7 @@ import { Card } from '../Card/Card';
 
 export function CardsList() {
     return (
-        <div className='cardContainer'>
+        <nav className='cardContainer' aria-label="Acesso rápido aos serviços">
             <Card link='https://sac.uol.com.br/cobranca' text='Meus debitos'>
                 <Wallet />
             </Card>
@@ -25,6 +25,6 @@ export function CardsList() {
                 <LockSimpleOpen />
             </Card>
 
-        </div>
+        </nav>
     );
 }

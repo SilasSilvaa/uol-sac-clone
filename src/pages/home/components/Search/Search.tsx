@@ -3,16 +3,20 @@ import './Search.css'
 
 export function Search() {
     return (
-        <>
-            <div className='search-container'>
-                <h2>Olá, como podemos te ajudar?</h2>
-                <div className='input-content'>
-                    <input type="search" name="" placeholder='Digite aqui sua dúvida (exemplo: Como recuperar a senha?)' />
-                    <button type='button'>
-                        <MagnifyingGlass size={25} />
-                    </button>
-                </div>
-            </div>
-        </>
+        <section className='search-container' aria-labelledby="search-title">
+            <h2 id="search-title">Olá, como podemos te ajudar?</h2>
+            <form className='input-content' role="search">
+                <input
+                    type="search"
+                    name="search-query"
+                    placeholder='Digite aqui sua dúvida (exemplo: Como recuperar a senha?)'
+                    aria-label="Campo de busca por dúvidas"
+                    autoComplete="off"
+                />
+                <button type='submit' aria-label="Pesquisar">
+                    <MagnifyingGlass size={25} aria-hidden="true" />
+                </button>
+            </form>
+        </section>
     );
 }   
