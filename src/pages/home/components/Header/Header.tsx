@@ -6,155 +6,152 @@ export function Header() {
     return (
         <header>
             <div className="header-container">
-                <div className="hamburger-menu">
-                    <input type="checkbox" id="toggle-menu" hidden />
-                    <label htmlFor="toggle-menu" className="menu-icon">
-                        <List size={42} />
+                <div className="hamburger-menu" aria-label="Menu mobile">
+                    <input type="checkbox" id="toggle-menu" hidden aria-hidden="true" />
+                    <label htmlFor="toggle-menu" className="menu-icon" aria-expanded="false" aria-controls="sidebar-menu" role="button">
+                        <List size={42} aria-hidden="true" />
                         <span>menu</span>
                     </label>
 
-                    <nav className="sidebar">
+                    <nav id="sidebar-menu" className="sidebar" aria-label="Navegação principal">
                         <div className="first-block">
                             <div>
-                                <a href="https://conta.uol.com.br/login">
-                                    <UserCircle size={42} color="#EAB525" />
+                                <a href="https://conta.uol.com.br/login" aria-label="Acessar minha conta">
+                                    <UserCircle size={42} color="#EAB525" aria-hidden="true" />
                                     Entrar
                                 </a>
                             </div>
                             <div>
-                                <label htmlFor="toggle-menu" className="close-icon">
-                                    <X size={22} color="#000" />
+                                <label htmlFor="toggle-menu" className="close-icon" role="button" aria-label="Fechar menu">
+                                    <X size={22} color="#000" aria-hidden="true" />
                                 </label>
-
                             </div>
                         </div>
-                        <div className="second-block">
-                            <div className="menu-home">
-                                <a href="#">
-                                    <House size={22} color="#EAB525" />
+
+                        <ul className="second-block" role="menu">
+                            <li className="menu-home" role="none">
+                                <a href="#" role="menuitem" aria-current="page">
+                                    <House size={22} color="#EAB525" aria-hidden="true" />
                                     Home
                                 </a>
-                            </div>
+                            </li>
 
-                            <div className="menu-option">
-                                <input type="radio" name="menu-group" id="atendimento-menu" hidden />
-                                <label htmlFor="atendimento-menu" className="menu-label">
+                            <li className="menu-option" role="none">
+                                <input type="radio" name="menu-group" id="atendimento-menu" hidden aria-hidden="true" />
+                                <label htmlFor="atendimento-menu" className="menu-label" role="button" aria-expanded="false" aria-controls="atendimento-dropdown">
                                     <div>
-                                        <Chats size={22} />
+                                        <Chats size={22} aria-hidden="true" />
                                         <span>Atendimento</span>
                                     </div>
                                     <div>
-                                        <CaretDown className="caret-icon" size={22} />
+                                        <CaretDown className="caret-icon" size={22} aria-hidden="true" />
                                     </div>
                                 </label>
-                                <div className="menu-dropdown atendimento-menu-dropdown">
-                                    <a href="https://faq.uol.com.br/uolpd/">Ajuda</a>
-                                    <a href="https://sac.uol.com.br/atendimento-online">Fale conosco</a>
-                                </div>
-                            </div>
+                                <ul id="atendimento-dropdown" className="menu-dropdown atendimento-menu-dropdown" role="menu">
+                                    <li role="none"><a href="https://faq.uol.com.br/uolpd/" role="menuitem">Ajuda</a></li>
+                                    <li role="none"><a href="https://sac.uol.com.br/atendimento-online" role="menuitem">Fale conosco</a></li>
+                                </ul>
+                            </li>
 
-                            <div className="menu-option">
-                                <input type="radio" name="menu-group" id="financeiro-menu" hidden />
-                                <label htmlFor="financeiro-menu" className="menu-label">
+                            <li className="menu-option" role="none">
+                                <input type="radio" name="menu-group" id="financeiro-menu" hidden aria-hidden="true" />
+                                <label htmlFor="financeiro-menu" className="menu-label" role="button" aria-expanded="false" aria-controls="financeiro-dropdown">
                                     <div>
-                                        <Receipt size={22} />
+                                        <Receipt size={22} aria-hidden="true" />
                                         <span>Financeiro</span>
                                     </div>
                                     <div>
-                                        <CaretDown className="caret-icon" size={22} />
+                                        <CaretDown className="caret-icon" size={22} aria-hidden="true" />
                                     </div>
                                 </label>
-                                <div className="menu-dropdown financeiro-menu-dropdown">
-                                    <a href="https://sac.uol.com.br/cobranca">Meus débitos</a>
-                                    <a href="https://sac.uol.com.br/extrato">Meu extrato</a>
-                                    <a href="https://sac.uol.com.br/segundaviaboleto">2º via do boleto a vencer</a>
-                                    <a href="https://sac.uol.com.br/meiospagamento">Meios de pagamentos</a>
-                                    <a href="https://sac.uol.com.br/page/declaracao-quitacao-debitos">Comprovante de quitação</a>
-                                    <a href="https://sac.uol.com.br/dados-de-recebimento">Dados de recebimento</a>
-                                </div>
-                            </div>
+                                <ul id="financeiro-dropdown" className="menu-dropdown financeiro-menu-dropdown" role="menu">
+                                    <li role="none"><a href="https://sac.uol.com.br/cobranca" role="menuitem">Meus débitos</a></li>
+                                    <li role="none"><a href="https://sac.uol.com.br/extrato" role="menuitem">Meu extrato</a></li>
+                                    <li role="none"><a href="https://sac.uol.com.br/segundaviaboleto" role="menuitem">2º via do boleto a vencer</a></li>
+                                    <li role="none"><a href="https://sac.uol.com.br/meiospagamento" role="menuitem">Meios de pagamentos</a></li>
+                                    <li role="none"><a href="https://sac.uol.com.br/page/declaracao-quitacao-debitos" role="menuitem">Comprovante de quitação</a></li>
+                                    <li role="none"><a href="https://sac.uol.com.br/dados-de-recebimento" role="menuitem">Dados de recebimento</a></li>
+                                </ul>
+                            </li>
 
-                            <div className="menu-option">
-                                <input type="radio" name="menu-group" id="minha-conta-menu" hidden />
-                                <label htmlFor="minha-conta-menu" className="menu-label">
+                            <li className="menu-option" role="none">
+                                <input type="radio" name="menu-group" id="minha-conta-menu" hidden aria-hidden="true" />
+                                <label htmlFor="minha-conta-menu" className="menu-label" role="button" aria-expanded="false" aria-controls="conta-dropdown">
                                     <div>
-                                        <UserGear size={22} />
+                                        <UserGear size={22} aria-hidden="true" />
                                         <span>Minha Conta</span>
                                     </div>
                                     <div>
-                                        <CaretDown className="caret-icon" size={22} />
+                                        <CaretDown className="caret-icon" size={22} aria-hidden="true" />
                                     </div>
                                 </label>
-                                <div className="menu-dropdown minha-conta-menu-dropdown">
-                                    <a href="https://sac.uol.com.br/recuperarsenha">Recuperação de senha</a>
-                                    <a href="https://sac.uol.com.br/dados-de-cadastro">Meus dados</a>
-                                    <a href="https://sac.uol.com.br/meus-beneficios">Meus benefícios</a>
-                                    <a href="https://sac.uol.com.br/produtoseservicos">Meus produtos</a>
-                                    <a href="https://sac.uol.com.br/produtoseservicos">Cartilha de segurança</a>
-                                </div>
-                            </div>
-                        </div>
+                                <ul id="conta-dropdown" className="menu-dropdown minha-conta-menu-dropdown" role="menu">
+                                    <li role="none"><a href="https://sac.uol.com.br/recuperarsenha" role="menuitem">Recuperação de senha</a></li>
+                                    <li role="none"><a href="https://sac.uol.com.br/dados-de-cadastro" role="menuitem">Meus dados</a></li>
+                                    <li role="none"><a href="https://sac.uol.com.br/meus-beneficios" role="menuitem">Meus benefícios</a></li>
+                                    <li role="none"><a href="https://sac.uol.com.br/produtoseservicos" role="menuitem">Meus produtos</a></li>
+                                    <li role="none"><a href="https://sac.uol.com.br/produtoseservicos" role="menuitem">Cartilha de segurança</a></li>
+                                </ul>
+                            </li>
+                        </ul>
                     </nav>
                 </div>
                 <div className="sac-logo">
                     <Link to="/">
-                        <img src="/Logo SAC.svg" alt="" height={28} />
+                        <figure>
+                            <img src="/Logo SAC.svg" alt="Logo SAC" height={28} aria-hidden="false" />
+                        </figure>
                     </Link>
                 </div>
 
-                <div className="menu-list">
-                    <div>
-                        <a href="#">
-                            Home
-                        </a>
+                <nav className="menu-list" aria-label="Menu principal">
+                    <div className="menu-item">
+                        <Link to="/" aria-current="page">Home</Link>
                     </div>
 
-                    <input type="radio" name="menu-group" id="none-desk" hidden defaultChecked />
-
-                    <div className="menu-container-desk">
+                    <div className="menu-container-desk" role="menuitem">
                         <input type="radio" name="menu-group" id="atendimento-menu-desk" hidden />
-                        <label htmlFor="atendimento-menu-desk" className="menu-label-desk">
+                        <label htmlFor="atendimento-menu-desk" className="menu-label-desk" tabIndex={0} role="button">
                             Atendimento
-                            <CaretDown className="caret-icon-desk" size={20} />
+                            <CaretDown className="caret-icon-desk" size={20} aria-hidden="true" />
                         </label>
-                        <div className="menu-dropdown-desk">
-                            <a href="https://faq.uol.com.br/uolpd/">Ajuda</a>
-                            <a href="https://sac.uol.com.br/atendimento-online">Fale conosco</a>
-                        </div>
+                        <ul className="menu-dropdown-desk" role="menu">
+                            <li role="none"><a href="https://faq.uol.com.br/uolpd/" role="menuitem">Ajuda</a></li>
+                            <li role="none"><a href="https://sac.uol.com.br/atendimento-online" role="menuitem">Fale conosco</a></li>
+                        </ul>
                     </div>
 
-                    <div className="menu-container-desk">
+                    <div className="menu-container-desk" role="menuitem">
                         <input type="radio" name="menu-group" id="financeiro-menu-desk" hidden />
-                        <label htmlFor="financeiro-menu-desk" className="menu-label-desk">
+                        <label htmlFor="financeiro-menu-desk" className="menu-label-desk" tabIndex={0} role="button">
                             Financeiro
-                            <CaretDown className="caret-icon-desk" size={20} />
+                            <CaretDown className="caret-icon-desk" size={20} aria-hidden="true" />
                         </label>
-                        <div className="menu-dropdown-desk">
-                            <a href="https://sac.uol.com.br/cobranca">Meus débitos</a>
-                            <a href="https://sac.uol.com.br/extrato">Meu extrato</a>
-                            <a href="https://sac.uol.com.br/segundaviaboleto">2º via do boleto a vencer</a>
-                            <a href="https://sac.uol.com.br/meiospagamento">Meios de pagamentos</a>
-                            <a href="https://sac.uol.com.br/page/declaracao-quitacao-debitos">Comprovante de quitação</a>
-                            <a href="https://sac.uol.com.br/dados-de-recebimento">Dados de recebimento</a>
-                        </div>
+                        <ul className="menu-dropdown-desk" role="menu">
+                            <li role="none"><a href="https://sac.uol.com.br/cobranca" role="menuitem">Meus débitos</a></li>
+                            <li role="none"><a href="https://sac.uol.com.br/extrato" role="menuitem">Meu extrato</a></li>
+                            <li role="none"><a href="https://sac.uol.com.br/segundaviaboleto" role="menuitem">2º via do boleto a vencer</a></li>
+                            <li role="none"><a href="https://sac.uol.com.br/meiospagamento" role="menuitem">Meios de pagamentos</a></li>
+                            <li role="none"><a href="https://sac.uol.com.br/page/declaracao-quitacao-debitos" role="menuitem">Comprovante de quitação</a></li>
+                            <li role="none"><a href="https://sac.uol.com.br/dados-de-recebimento" role="menuitem">Dados de recebimento</a></li>
+                        </ul>
                     </div>
 
-                    <div className="menu-container-desk">
+                    <div className="menu-container-desk" role="menuitem">
                         <input type="radio" name="menu-group" id="conta-menu-desk" hidden />
-                        <label htmlFor="conta-menu-desk" className="menu-label-desk">
+                        <label htmlFor="conta-menu-desk" className="menu-label-desk" tabIndex={0} role="button">
                             Minha Conta
-                            <CaretDown className="caret-icon-desk" size={20} />
+                            <CaretDown className="caret-icon-desk" size={20} aria-hidden="true" />
                         </label>
-                        <div className="menu-dropdown-desk">
-                            <a href="https://sac.uol.com.br/recuperarsenha">Recuperação de senha</a>
-                            <a href="https://sac.uol.com.br/dados-de-cadastro">Meus dados</a>
-                            <a href="https://sac.uol.com.br/meus-beneficios">Meus benefícios</a>
-                            <a href="https://sac.uol.com.br/produtoseservicos">Meus produtos</a>
-                            <a href="https://sac.uol.com.br/produtoseservicos">Cartilha de segurança</a>
-                        </div>
+                        <ul className="menu-dropdown-desk" role="menu">
+                            <li role="none"><a href="https://sac.uol.com.br/recuperarsenha" role="menuitem">Recuperação de senha</a></li>
+                            <li role="none"><a href="https://sac.uol.com.br/dados-de-cadastro" role="menuitem">Meus dados</a></li>
+                            <li role="none"><a href="https://sac.uol.com.br/meus-beneficios" role="menuitem">Meus benefícios</a></li>
+                            <li role="none"><a href="https://sac.uol.com.br/produtoseservicos" role="menuitem">Meus produtos</a></li>
+                            <li role="none"><a href="https://sac.uol.com.br/produtoseservicos" role="menuitem">Cartilha de segurança</a></li>
+                        </ul>
                     </div>
-
-                </div>
+                </nav>
 
                 <div className="second-menu-list">
                     <a href="https://faq.uol.com.br/uolpd/">

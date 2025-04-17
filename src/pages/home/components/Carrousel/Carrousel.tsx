@@ -14,9 +14,13 @@ export function Carrousel() {
     };
 
     return (
-        <div className="carrousel-wrapper">
-            <button className="arrow arrow-left" onClick={() => scroll("left")}>
-                <CaretCircleLeft size={40} color="#FFF" />
+        <section className="carrousel-wrapper" aria-label="Carrossel de promoções">
+            <button
+                className="arrow arrow-left"
+                onClick={() => scroll("left")}
+                aria-label="Voltar slide anterior"
+            >
+                <CaretCircleLeft size={40} color="#FFF" aria-hidden="true" />
             </button>
 
             <div className="carrousel-track">
@@ -33,9 +37,13 @@ export function Carrousel() {
                 </a>
             </div>
 
-            <button className="arrow arrow-right" onClick={() => scroll("right")}>
-                <CaretCircleRight size={40} color="#FFF" />
+            <button
+                className="arrow arrow-right"
+                onClick={() => scroll("right")}
+                aria-label="Avançar para próximo slide"
+            >
+                <CaretCircleRight size={40} color="#FFF" aria-hidden="true" />
             </button>
-        </div>
+        </section>
     );
 }
