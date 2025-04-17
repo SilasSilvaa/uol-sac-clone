@@ -1,8 +1,20 @@
 import { CaretDown, Chats, House, List, Question, Receipt, UserCircle, UserGear, X } from "@phosphor-icons/react";
 import './Header.css'
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 export function Header() {
+
+    const [openMenu, setOpenMenu] = useState<string | null>(null);
+
+    const handleMenuToggle = (menuId: string) => {
+        if (openMenu === menuId) {
+            setOpenMenu(null);
+        } else {
+            setOpenMenu(menuId);
+        }
+    };
+
     return (
         <header>
             <div className="header-container">
@@ -110,24 +122,32 @@ export function Header() {
                     </div>
 
                     <div className="menu-container-desk" role="menuitem">
-                        <input type="radio" name="menu-group" id="atendimento-menu-desk" hidden />
-                        <label htmlFor="atendimento-menu-desk" className="menu-label-desk" tabIndex={0} role="button">
+                        <input type="radio" name="menu-group" id="atendimento-menu-desk" hidden
+                            checked={openMenu === 'atendimento'}
+                            onChange={() => { }} />
+                        <label htmlFor="atendimento-menu-desk" className="menu-label-desk" tabIndex={0}
+                            role="button" onClick={() => handleMenuToggle('atendimento')}>
                             Atendimento
                             <CaretDown className="caret-icon-desk" size={20} aria-hidden="true" />
                         </label>
-                        <ul className="menu-dropdown-desk" role="menu">
+                        <ul className="menu-dropdown-desk" role="menu"
+                            style={{ display: openMenu === 'atendimento' ? 'block' : 'none' }}>
                             <li role="none"><a href="https://faq.uol.com.br/uolpd/" role="menuitem">Ajuda</a></li>
                             <li role="none"><a href="https://sac.uol.com.br/atendimento-online" role="menuitem">Fale conosco</a></li>
                         </ul>
                     </div>
 
                     <div className="menu-container-desk" role="menuitem">
-                        <input type="radio" name="menu-group" id="financeiro-menu-desk" hidden />
-                        <label htmlFor="financeiro-menu-desk" className="menu-label-desk" tabIndex={0} role="button">
+                        <input type="radio" name="menu-group" id="financeiro-menu-desk" hidden
+                            checked={openMenu === 'financeiro'}
+                            onChange={() => { }} />
+                        <label htmlFor="financeiro-menu-desk" className="menu-label-desk" tabIndex={0}
+                            role="button" onClick={() => handleMenuToggle('financeiro')}>
                             Financeiro
                             <CaretDown className="caret-icon-desk" size={20} aria-hidden="true" />
                         </label>
-                        <ul className="menu-dropdown-desk" role="menu">
+                        <ul className="menu-dropdown-desk" role="menu"
+                            style={{ display: openMenu === 'financeiro' ? 'block' : 'none' }}>
                             <li role="none"><a href="https://sac.uol.com.br/cobranca" role="menuitem">Meus débitos</a></li>
                             <li role="none"><a href="https://sac.uol.com.br/extrato" role="menuitem">Meu extrato</a></li>
                             <li role="none"><a href="https://sac.uol.com.br/segundaviaboleto" role="menuitem">2º via do boleto a vencer</a></li>
@@ -138,12 +158,16 @@ export function Header() {
                     </div>
 
                     <div className="menu-container-desk" role="menuitem">
-                        <input type="radio" name="menu-group" id="conta-menu-desk" hidden />
-                        <label htmlFor="conta-menu-desk" className="menu-label-desk" tabIndex={0} role="button">
+                        <input type="radio" name="menu-group" id="conta-menu-desk" hidden
+                            checked={openMenu === 'conta'}
+                            onChange={() => { }} />
+                        <label htmlFor="conta-menu-desk" className="menu-label-desk" tabIndex={0}
+                            role="button" onClick={() => handleMenuToggle('conta')}>
                             Minha Conta
                             <CaretDown className="caret-icon-desk" size={20} aria-hidden="true" />
                         </label>
-                        <ul className="menu-dropdown-desk" role="menu">
+                        <ul className="menu-dropdown-desk" role="menu"
+                            style={{ display: openMenu === 'conta' ? 'block' : 'none' }}>
                             <li role="none"><a href="https://sac.uol.com.br/recuperarsenha" role="menuitem">Recuperação de senha</a></li>
                             <li role="none"><a href="https://sac.uol.com.br/dados-de-cadastro" role="menuitem">Meus dados</a></li>
                             <li role="none"><a href="https://sac.uol.com.br/meus-beneficios" role="menuitem">Meus benefícios</a></li>
