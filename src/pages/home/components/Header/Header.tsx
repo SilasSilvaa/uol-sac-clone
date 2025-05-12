@@ -28,10 +28,10 @@ export function Header() {
                     <nav id="sidebar-menu" className="sidebar" aria-label="Navegação principal">
                         <div className="first-block">
                             <div>
-                                <a href="https://conta.uol.com.br/login" aria-label="Acessar minha conta">
+                                <Link to="/login" aria-label="Acessar minha conta">
                                     <UserCircle size={42} color="#EAB525" aria-hidden="true" />
                                     Entrar
-                                </a>
+                                </Link>
                             </div>
                             <div>
                                 <label htmlFor="toggle-menu" className="close-icon" role="button" aria-label="Fechar menu">
@@ -183,10 +183,10 @@ export function Header() {
                         Ajuda
                     </a>
                     <hr />
-                    <a href="https://conta.uol.com.br/login">
+                    <Link to="/login" aria-label="Acessar minha conta">
                         <UserCircle size={32} color="#EAB525" />
                         Entrar
-                    </a>
+                    </Link>
                 </div>
             </div>
         </header >
