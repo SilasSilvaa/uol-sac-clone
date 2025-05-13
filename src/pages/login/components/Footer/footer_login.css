@@ -1,0 +1,27 @@
+.footer_container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.footer_container p {
+    font-size: 13px;
+    color: #666;
+}
+
+.footer_links {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.footer_links a {
+    font-size: 13px;
+}
+
+@media screen and (max-width: 768px) {
+    .footer_container {
+        display: none;
+    }
+}

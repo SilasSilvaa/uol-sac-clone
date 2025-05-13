@@ -1,0 +1,40 @@
+.login_form_content {
+    display: flex;
+    flex-direction: column;
+
+    padding: 1rem 2rem;
+
+    width: 100%;
+    gap: 0.8rem;
+}
+
+.login_form_content input {
+    padding: 0.7rem 0.5rem;
+    border: 1px solid #bcc6d0;
+}
+
+.login_form_content h1 {
+    font-size: 1.25rem;
+}
+
+.login_form_content button {
+    height: 35px;
+    background-color: #FDC900;
+    border: none;
+    border-radius: 2px;
+
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
