@@ -6,12 +6,12 @@ export function RecoverPassword() {
     return (
         <main className='recover_container'>
             <section className='recover_content' aria-labelledby="recover-heading">
-                <header className='recover_route' aria-label="Breadcrumb">
+                <nav className='recover_route' aria-label="Breadcrumb">
                     <img src="/house.svg" alt="Início" />
                     <Link to="/">Home</Link>
                     <img src="/arrow_next.svg" alt="Próximo" />
                     <span aria-current="page">Redefinição de senha</span>
-                </header>
+                </nav>
 
                 <h1 id="recover-heading">Redefinição de senha</h1>
 
