@@ -5,7 +5,7 @@ export function Footer() {
     return (
         <footer className="site-footer" role="contentinfo">
             <section className='more-info' aria-labelledby="more-info-heading">
-                <input type="checkbox" id="more-links" hidden aria-hidden="true" />
+                <input type="checkbox" defaultChecked id="more-links" hidden aria-hidden="true" />
                 <div className='linebar'>
                     <label htmlFor="more-links" className="menu-more-links" aria-expanded="false" aria-controls="footer-links">
                         <span className='more-info-text' id="more-info-heading">

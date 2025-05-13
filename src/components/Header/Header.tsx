@@ -98,7 +98,7 @@ export function Header() {
                                     </div>
                                 </label>
                                 <ul id="conta-dropdown" className="menu-dropdown minha-conta-menu-dropdown" role="menu">
-                                    <li role="none"><a href="https://sac.uol.com.br/recuperarsenha" role="menuitem">Recuperação de senha</a></li>
+                                    <li role="none"><Link to="/recoverpassword" role="menuitem">Recuperação de senha</Link></li>
                                     <li role="none"><a href="https://sac.uol.com.br/dados-de-cadastro" role="menuitem">Meus dados</a></li>
                                     <li role="none"><a href="https://sac.uol.com.br/meus-beneficios" role="menuitem">Meus benefícios</a></li>
                                     <li role="none"><a href="https://sac.uol.com.br/produtoseservicos" role="menuitem">Meus produtos</a></li>
@@ -168,7 +168,7 @@ export function Header() {
                         </label>
                         <ul className="menu-dropdown-desk" role="menu"
                             style={{ display: openMenu === 'conta' ? 'block' : 'none' }}>
-                            <li role="none"><a href="https://sac.uol.com.br/recuperarsenha" role="menuitem">Recuperação de senha</a></li>
+                            <li role="none"><Link to="/recoverpassword" role="menuitem">Recuperação de senha</Link></li>
                             <li role="none"><a href="https://sac.uol.com.br/dados-de-cadastro" role="menuitem">Meus dados</a></li>
                             <li role="none"><a href="https://sac.uol.com.br/meus-beneficios" role="menuitem">Meus benefícios</a></li>
                             <li role="none"><a href="https://sac.uol.com.br/produtoseservicos" role="menuitem">Meus produtos</a></li>
