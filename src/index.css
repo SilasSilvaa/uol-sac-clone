@@ -37,4 +37,5 @@
 
 #root {
   background-color: #FFF;
+  min-height: 100vh;
 }
