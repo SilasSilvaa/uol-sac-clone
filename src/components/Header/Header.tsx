@@ -60,7 +60,7 @@ export function Header() {
                                     </div>
                                 </label>
                                 <ul id="atendimento-dropdown" className="menu-dropdown atendimento-menu-dropdown" role="menu">
-                                    <li role="none"><a href="https://faq.uol.com.br/uolpd/" role="menuitem">Ajuda</a></li>
+                                    <li role="none"><Link to="/help" role="menuitem">Ajuda</Link></li>
                                     <li role="none"><a href="https://sac.uol.com.br/atendimento-online" role="menuitem">Fale conosco</a></li>
                                 </ul>
                             </li>
@@ -132,7 +132,7 @@ export function Header() {
                         </label>
                         <ul className="menu-dropdown-desk" role="menu"
                             style={{ display: openMenu === 'atendimento' ? 'block' : 'none' }}>
-                            <li role="none"><a href="https://faq.uol.com.br/uolpd/" role="menuitem">Ajuda</a></li>
+                            <li role="none"><Link to="/help" role="menuitem">Ajuda</Link></li>
                             <li role="none"><a href="https://sac.uol.com.br/atendimento-online" role="menuitem">Fale conosco</a></li>
                         </ul>
                     </div>
