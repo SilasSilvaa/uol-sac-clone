@@ -6,12 +6,12 @@ import { Search } from "./components/Search/Search";
 
 export function Home() {
     return (
-        <>
+        <main>
             <Carrousel />
             <InfoComponent />
             <CardsList />
             <Search />
             <DownloadApp />
-        </>
+        </main>
     )
 }
