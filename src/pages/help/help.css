@@ -47,6 +47,8 @@
 
     max-width: 80vw;
     text-align: center;
+
+    cursor: pointer;
 }
 
 .help_cards_content {
