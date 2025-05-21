@@ -11,6 +11,8 @@
     max-width: 1170px;
     height: 44px;
     padding: 0 1rem;
+
+    gap: 0.5rem;
 }
 
 .services-list,
@@ -76,6 +78,10 @@
     justify-content: space-between;
 }
 
+.second-items {
+    height: 100%;
+}
+
 .second-items ul {
     display: flex;
     justify-content: space-between;
@@ -96,7 +102,7 @@
     .second-items {
         display: none;
     }
-    
+
     .box-list {
         justify-content: center;
     }
