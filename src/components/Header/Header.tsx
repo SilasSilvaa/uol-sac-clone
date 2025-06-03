@@ -81,7 +81,7 @@ export function Header() {
                                     <li role="none"><a href="https://sac.uol.com.br/extrato" role="menuitem">Meu extrato</a></li>
                                     <li role="none"><a href="https://sac.uol.com.br/segundaviaboleto" role="menuitem">2º via do boleto a vencer</a></li>
                                     <li role="none"><a href="https://sac.uol.com.br/meiospagamento" role="menuitem">Meios de pagamentos</a></li>
-                                    <li role="none"><a href="https://sac.uol.com.br/page/declaracao-quitacao-debitos" role="menuitem">Comprovante de quitação</a></li>
+                                    <li role="none"><Link to="/debt-settlment" role="menuitem">Comprovante de quitação</Link></li>
                                     <li role="none"><a href="https://sac.uol.com.br/dados-de-recebimento" role="menuitem">Dados de recebimento</a></li>
                                 </ul>
                             </li>
@@ -152,7 +152,7 @@ export function Header() {
                             <li role="none"><a href="https://sac.uol.com.br/extrato" role="menuitem">Meu extrato</a></li>
                             <li role="none"><a href="https://sac.uol.com.br/segundaviaboleto" role="menuitem">2º via do boleto a vencer</a></li>
                             <li role="none"><a href="https://sac.uol.com.br/meiospagamento" role="menuitem">Meios de pagamentos</a></li>
-                            <li role="none"><a href="https://sac.uol.com.br/page/declaracao-quitacao-debitos" role="menuitem">Comprovante de quitação</a></li>
+                            <li role="none"><Link to="/debt-settlment" role="menuitem">Comprovante de quitação</Link></li>
                             <li role="none"><a href="https://sac.uol.com.br/dados-de-recebimento" role="menuitem">Dados de recebimento</a></li>
                         </ul>
                     </div>
