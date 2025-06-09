@@ -16,13 +16,23 @@ export function Help() {
                     </form>
                 </header>
 
-                <section className='help_card_container' aria-labelledby="categories-heading">
-                    <h2 id="categories-heading">Você também pode navegar pelas categorias</h2>
-                    <div className='help_cards_content'>
-                        {cardsData.map(({ text, image }) => (
-                            <Card key={text} text={text} image={image} />
-                        ))}
-                    </div>
+                <section className='help_cards_container' aria-labelledby="categories-heading">
+                    <section className='help_card_questions_container'>
+                        <h2>Perguntas mais frequentes</h2>
+                        <div className='help_card_questions_content'>
+                            {frequentlyAskedQuestions.map((question) => (
+                                <a href={`#${question}`}>{question}</a>
+                            ))}
+                        </div>
+                    </section>
+                    <section className='help_cards_section'>
+                        <h2 id="categories-heading">Você também pode navegar pelas categorias</h2>
+                        <div className='help_cards_section_content'>
+                            {cardsData.map(({ text, image }) => (
+                                <Card key={text} text={text} image={image} />
+                            ))}
+                        </div>
+                    </section>
                 </section>
             </section>
         </main>
@@ -46,4 +56,12 @@ const cardsData = [
     { text: 'Familia Protegida', image: '/familia_protegida.png' },
     { text: 'UOL Leia+', image: '/uol_leia.png' },
     { text: 'UOL Loja de jogos', image: '/uol_loja_jogos.png' },
+];
+
+const frequentlyAskedQuestions = [
+    "Quais são os planos do BOL Mail?",
+    "Esqueci minha senha de acesso. O que faço?",
+    "Como acessar o e-mail UOL usando o App UOL Mail?",
+    "Como emitir a segunda via do boleto?",
+    "Como trocar a senha do meu e-mail?"
 ];
