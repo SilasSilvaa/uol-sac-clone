@@ -5,6 +5,7 @@ import { RecoverPassword } from "./pages/recover_password";
 import { Default } from "./layout/Default";
 import { Help } from "./pages/help";
 import { DebtSettlement } from "./pages/debt_settlement";
+import { OnlineSupport } from "./pages/online_suport";
 
 export function Router() {
     return (
@@ -14,6 +15,7 @@ export function Router() {
                 <Route path="/recoverpassword" element={<RecoverPassword />} />
                 <Route path="/help" element={<Help />} />
                 <Route path="/debt-settlment" element={<DebtSettlement />} />
+                <Route path="/support" element={<OnlineSupport />} />
             </Route>
             <Route path="/login" element={<Login />} />
         </Routes>
