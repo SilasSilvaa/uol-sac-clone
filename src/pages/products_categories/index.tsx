@@ -9,7 +9,7 @@ export function ProductCategories() {
     let params = useParams();
     const [key, setKey] = useState("UOL MAIL");
     const [questions, setQuestions] = useState<Array<string>>([]);
-    const [categories, setCategories] = useState(Object.keys(data.categories));
+    let categories = Object.keys(data.categories);
 
     useEffect(() => {
         if (params.category != null || params.category != undefined) {
