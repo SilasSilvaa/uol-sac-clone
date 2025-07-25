@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { Card } from './components/Card'
 import './help.css'
 
@@ -29,7 +30,9 @@ export function Help() {
                         <h2 id="categories-heading">Você também pode navegar pelas categorias</h2>
                         <div className='help_cards_section_content'>
                             {cardsData.map(({ text, image }) => (
-                                <Card key={text} text={text} image={image} />
+                                <Link to={`/categories/${text}`}>
+                                    <Card key={text} text={text} image={image} />
+                                </Link>
                             ))}
                         </div>
                     </section>
