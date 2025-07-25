@@ -6,6 +6,7 @@ import { Default } from "./layout/Default";
 import { Help } from "./pages/help";
 import { DebtSettlement } from "./pages/debt_settlement";
 import { OnlineSupport } from "./pages/online_suport";
+import { ProductCategories } from "./pages/products_categories";
 
 export function Router() {
     return (
@@ -16,6 +17,7 @@ export function Router() {
                 <Route path="/help" element={<Help />} />
                 <Route path="/debt-settlment" element={<DebtSettlement />} />
                 <Route path="/support" element={<OnlineSupport />} />
+                <Route path="/categories/:category" element={<ProductCategories />} />
             </Route>
             <Route path="/login" element={<Login />} />
         </Routes>
